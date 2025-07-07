@@ -1,13 +1,29 @@
 # Slowloris DoS Simulation Tool – Python CLI
 
+## Overview
+A Python-based command-line application that replicates the Slowloris Denial-of-Service (DoS) technique, designed for ethical testing, research, and understanding of application-layer DoS attacks. The tool targets HTTP servers by maintaining numerous half-open TCP connections, exhausting server resources without requiring high bandwidth.
 
-run:
-python3 slowloris.py -h to see the options
+## Key Features
+* Low-Bandwidth DoS Simulation: Demonstrates how application-layer exhaustion attacks can be launched with minimal network traffic.
+* Persistent Socket Handling: Opens multiple sockets and sends partial HTTP requests slowly to keep connections open as long as possible.
+* Target Configuration: Accepts custom host, port, and connection count parameters via CLI.
+* CLI-Based Operation: Lightweight and scriptable tool ideal for testing environments or controlled lab simulations.
 
-This is how the attack works
-* Script run and opens lots of connections to a web server.
-* Instead of finishing each request quickly, it sends tiny bits of data very slowly, just enough to keep the connection open.
-* It never completes the full request, and it just keeps the connection half-open.
-* Since Slowloris opens hundreds or thousands of these half-finished connections, the server becomes too busy to handle real users.
-* The server runs out of available connections
+## Use Cases
+* Educational tool for understanding HTTP-based DoS attacks
+* Internal red team or security lab testing scenarios
+* Demonstrating the importance of rate limiting, timeout configuration, and reverse proxies in mitigating application-layer threats
 
+## Technical Stack
+* Language: Python (standard libraries such as socket, time)
+* Network Layer: TCP socket connections simulating incomplete HTTP headers
+* Platform: Cross-platform (Linux, macOS, Windows with Python installed)
+* Interface: Command-line interface (CLI)
+
+## Benefits
+* Reinforces understanding of low-and-slow DoS techniques used in real-world scenarios
+* Aids in testing server resilience and tuning timeout or resource handling configurations
+* Enhances both red team and blue team knowledge by showing how subtle attacks evade basic detection
+
+## Benefits
+Designed strictly for educational and controlled testing environments. Unauthorized use against systems without explicit permission violates ethical standards and legal boundaries.
