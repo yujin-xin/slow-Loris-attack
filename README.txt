@@ -1,4 +1,5 @@
-#Slowloris DDoS attack
+# Slowloris DoS Simulation Tool – Python CLI
+
 
 run:
 python3 slowloris.py -h to see the options
