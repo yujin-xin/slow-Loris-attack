@@ -15,9 +15,10 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * Demonstrating the importance of rate limiting, timeout configuration, and reverse proxies in mitigating application-layer threats
 
 ## Technical Stack
-* Language: Python (standard libraries such as socket, time)
-* Network Layer: TCP socket connections simulating incomplete HTTP headers
-* Platform: Cross-platform (Linux, macOS, Windows with Python installed)
+* Language: Python
+* Networking: TCP/IP stack
+* OSI Layer: TCP socket connections simulating incomplete HTTP headers
+* Platform: Cross-platform
 * Interface: Command-line interface (CLI)
 
 ## Benefits
