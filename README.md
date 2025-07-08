@@ -26,5 +26,5 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * Aids in testing server resilience and tuning timeout or resource handling configurations
 * Enhances both red team and blue team knowledge by showing how subtle attacks evade basic detection
 
-## Benefits
+## Note
 Designed strictly for educational and controlled testing environments. Unauthorized use against systems without explicit permission violates ethical standards and legal boundaries.
