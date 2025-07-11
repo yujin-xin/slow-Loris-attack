@@ -22,16 +22,14 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * Legitimate users can't establish new connections because the server has reached its maximum concurrent connection limit
 * The server becomes unresponsive to real traffic
 
-# How to use
+## How to use
 Clone first the repository
 ```bash
 git clone https://github.com/yujin-xin/slow-Loris-attack
 cd slow-Loris-attack
+python slowloris.py -h
 ```
 
-```bash
-python slowloris.py
-```
 
 
 
