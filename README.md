@@ -23,13 +23,18 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * The server becomes unresponsive to real traffic
 
 ## How to use
-Clone first the repository
+Clone first the repository and proceed to the directory (follow the instruction bellow)
 ```bash
 git clone https://github.com/yujin-xin/slow-Loris-attack
 cd slow-Loris-attack
 python slowloris.py -h
 ```
 
+After running the `slowloris.py`, it will show you how to use it
+```bash
+usage: slowloris.py [-h] -t TARGET [-p PORT] [-i INTERVAL] [-d DURATION] [-s SOCKETCOUNT]
+slowloris.py: error: the following arguments are required: -t/--target
+```
 
 
 
