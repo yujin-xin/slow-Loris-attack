@@ -15,7 +15,7 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * Demonstrating the importance of rate limiting, timeout configuration, and reverse proxies in mitigating application-layer threats
 
 ## How Slow-loris Works
-* The attack takes advantage of the fact that web servers have a limited number of concurrent connections they can handle. Slowloris opens many connections to the target server but sends HTTP requests very slowly and incompletely, keeping these connections alive for as long as possible.
+The attack takes advantage of the fact that web servers have a limited number of concurrent connections they can handle. Slowloris opens many connections to the target server but sends HTTP requests very slowly and incompletely, keeping these connections alive for as long as possible.
 
 ## Result
 * The server's connection pool becomes filled with these slow, incomplete requests
