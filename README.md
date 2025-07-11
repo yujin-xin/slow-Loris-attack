@@ -14,6 +14,34 @@ A Python-based command-line application that replicates the Slowloris Denial-of-
 * Internal red team or security lab testing scenarios
 * Demonstrating the importance of rate limiting, timeout configuration, and reverse proxies in mitigating application-layer threats
 
+## How Slow-loris Works
+* The attack takes advantage of the fact that web servers have a limited number of concurrent connections they can handle. Slowloris opens many connections to the target server but sends HTTP requests very slowly and incompletely, keeping these connections alive for as long as possible.
+
+## Result
+* The server's connection pool becomes filled with these slow, incomplete requests
+* Legitimate users can't establish new connections because the server has reached its maximum concurrent connection limit
+* The server becomes unresponsive to real traffic
+
+# How to use
+Clone first the repository
+```bash
+git clone https://github.com/yujin-xin/slow-Loris-attack
+cd slow-Loris-attack
+```
+
+```bash
+python slowloris.py
+```
+
+
+
+## Mitigation
+* Implementing connection timeouts for incomplete requests
+* Limiting connections per IP address
+* Using reverse proxies or load balancers that can handle slow connections better
+* Employing web servers less vulnerable to this attack (like Nginx or IIS)
+
+
 ## Technical Stack
 * Language: Python
 * Networking: TCP/IP stack
