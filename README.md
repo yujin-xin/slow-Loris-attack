@@ -88,5 +88,5 @@ Note: The remaining options will use their default configurations if not specifi
 * Aids in testing server resilience and tuning timeout or resource handling configurations
 * Enhances both red team and blue team knowledge by showing how subtle attacks evade basic detection
 
-#📍️WARNING📍️
+# 📍️WARNING📍️
 Designed strictly for educational and controlled testing environments. Unauthorized use against systems without explicit permission violates ethical standards and legal boundaries.
